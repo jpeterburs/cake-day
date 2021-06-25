@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  cake-day:
+    build: .
+    environment:
+      TOKEN: /run/secrets/token
+      PREFIX: '.'
+
+secrets:
+  token:
+    file: ./token.txt

@@ -1,0 +1,6 @@
+.bundle
+.dockerignore
+.gitignore
+.rubocop.yml
+docker-compose.yml
+Dockerfile
