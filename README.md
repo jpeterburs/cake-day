@@ -13,6 +13,15 @@ You can either [invite] the official bot it to your server or host the bot yours
 
 ## Installation
 
+### Initial database setup
+
+Dump the database schema into your `database` service using:
+```shell
+docker-compose run -T database mysql -hdatabase -uroot < schema.sql
+```
+
+### Starting the bot
+
 Simply create a file named `token.txt` and paste your bots token in it.
 Then start your bot using `docker-compose up -d`.
 *You might want to pass the `--build` option to rebuild the container*

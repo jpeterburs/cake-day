@@ -1,12 +1,17 @@
 version: '3.9'
 
 services:
-  cake-day:
-    build: .
+  database:
+    image: mariadb
+    restart: always
+    volumes:
+      - ./database:/var/lib/mysql
     environment:
-      TOKEN: /run/secrets/token
-      PREFIX: '.'
+      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 'yes'
 
-secrets:
-  token:
-    file: ./token.txt
+  discord-bot:
+    build: .
+    depends_on:
+      - database
+    environment:
+      PREFIX: '.'

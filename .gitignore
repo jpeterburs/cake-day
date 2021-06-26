@@ -26,3 +26,6 @@
 
 # Secret files
 token.txt
+
+# Database
+database/

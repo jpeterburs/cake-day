@@ -1,4 +1,5 @@
 require 'discordrb'
+require_relative 'lib/database'
 
 client = Discordrb::Commands::CommandBot.new(token: File.read('token.txt'), prefix: ENV['PREFIX'])
 
