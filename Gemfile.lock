@@ -85,6 +85,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   discordrb
+  i18n
   mysql2
   pry
   rubocop

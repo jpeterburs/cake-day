@@ -15,3 +15,4 @@ services:
       - database
     environment:
       PREFIX: '.'
+      LOCALIZATION: 'en'
