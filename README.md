@@ -13,21 +13,31 @@ You can either [invite] the official bot it to your server or host the bot yours
 
 ## Installation
 
-### Initial database setup
-
-Dump the database schema into your `database` service using:
-```shell
-docker-compose run -T database mysql -hdatabase -uroot < schema.sql
-```
-
 ### Starting the bot
 
 Simply create a file named `token.txt` and paste your bots token in it.
 Then start your bot using `docker-compose up -d`.
 *You might want to pass the `--build` option to rebuild the container*
 
-This will create a Docker container, that will run in the background
-To stop the demon, simply run `docker-compose down`.
+This will create a Docker container, that will run in the background.
+
+### First time database initialization
+
+After starting the bot for the first time, you have to initialize trhe database for the bot to function properly.
+
+Simply dump the database schema into your `database` service using:
+```shell
+docker-compose exec -T database mysql -hdatabase -uroot < schema.sql
+```
+
+If for any reason the database and / or the table already exists, they won't be overridden.
+
+### Stopping the bot
+
+To stop the bot, simply run `docker-compose down`.
+This will shut the bot and its database down.
+
+Don't worry, as long as you don't delete the `database` folder, your data is saved.
 
 ## License
 
