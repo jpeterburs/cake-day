@@ -1,0 +1,6 @@
+de:
+  commands:
+    ping:
+      description: 'Ein Testbefehl, um die derzeitige Latenzzeit und den API-Ping zu sehen.'
+      calculating: 'Berechne...'
+      reply: "**🏓 Pong!** `%{time}ms`"

@@ -1,5 +1,9 @@
 require 'discordrb'
+require 'i18n'
 require_relative 'lib/database'
+
+I18n.load_path << Dir['lib/locales/*.yml']
+I18n.default_locale = :en
 
 client = Discordrb::Commands::CommandBot.new(token: File.read('token.txt'), prefix: ENV['PREFIX'])
 
