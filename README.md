@@ -1,5 +1,8 @@
 # Cake day!
 
+![license](https://img.shields.io/github/license/stealthyV1per/cake-day?style=flat-square)
+![latest-version](https://img.shields.io/github/v/release/stealthyV1per/cake-day?include_prereleases&style=flat-square)
+
 🎂 A discord bot to remember all those birthdays
 
 ## Overview
