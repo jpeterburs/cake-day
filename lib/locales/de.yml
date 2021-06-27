@@ -1,5 +1,14 @@
 de:
+  error_reply: 'Etwas ist schief gelaufen!'
   commands:
+    birthday_add:
+      description: 'Fügt deinen Geburtstag zur Liste hinzu.'
+      usage: 'birthday_add [dd-mm-yyyy]'
+      saved_reply: 'Geburtstag angelegt.'
+    birthday_remove:
+      description: 'Entfernt deinen Geburtstag aus der Liste.'
+      usage: 'birthday_remove'
+      deleted_reply: 'Geburtstag gelöscht.'
     ping:
       description: 'Ein Testbefehl, um die derzeitige Latenzzeit und den API-Ping zu sehen.'
       calculating: 'Berechne...'

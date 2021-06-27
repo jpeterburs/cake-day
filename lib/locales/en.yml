@@ -1,5 +1,14 @@
 en:
+  error_reply: 'Something went wrong!'
   commands:
+    birthday_add:
+      description: 'Adds your birthday to the list.'
+      usage: 'birthday_add [dd-mm-yyyy]'
+      saved_reply: 'Birthday created.'
+    birthday_remove:
+      description: 'Removes your birthday from the list.'
+      usage: 'birthday_remove'
+      deleted_reply: 'Birthday deleted.'
     ping:
       description: 'A test command to see the current latency and API ping.'
       calculating: 'Calculating...'
