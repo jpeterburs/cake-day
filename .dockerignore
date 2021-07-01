@@ -1,8 +1,10 @@
-.bundle
+.bundle/
+.git/
+database/
+migrations/
 .dockerignore
 .gitignore
 .rubocop.yml
 docker-compose.yml
 Dockerfile
-database/
 schema.sql
