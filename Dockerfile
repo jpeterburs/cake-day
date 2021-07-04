@@ -7,4 +7,6 @@ COPY Gemfile* ./
 RUN bundle install
 COPY . .
 
+RUN bundle exec whenever --update-crontab
+
 CMD ["ruby", "cake_day.rb"]
