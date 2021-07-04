@@ -13,3 +13,7 @@ de:
       description: 'Ein Testbefehl, um die derzeitige Latenzzeit und den API-Ping zu sehen.'
       calculating: 'Berechne...'
       reply: "**🏓 Pong!** `%{time}ms`"
+  tasks:
+    cake_day:
+      announce_todays_birthdays:
+        announcement: "Heute ist der Geburtstag von %{user}. \n**Alles gute zum Geburtstag**!"

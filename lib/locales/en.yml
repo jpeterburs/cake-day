@@ -13,3 +13,7 @@ en:
       description: 'A test command to see the current latency and API ping.'
       calculating: 'Calculating...'
       reply: "**🏓 Pong!** `%{time}ms`"
+  tasks:
+    cake_day:
+      announce_todays_birthdays:
+        announcement: "Today is the birthday of %{user}. \nSay **Happy Cake-Day**!"
